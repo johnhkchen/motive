@@ -115,7 +115,7 @@ mailer:
 # Database Configuration
 database:
   # Database connection URI
-  uri: {{get_env(name="DATABASE_URL", default="postgres://loco:loco@localhost:5432/motive_development")}}
+  uri: {{get_env(name="DATABASE_URL", default="postgres://loco:loco@localhost:5151/motive_development")}}
   # When enabled, the sql query will be logged.
   enable_logging: false
   # Set the timeout duration when acquiring a connection.

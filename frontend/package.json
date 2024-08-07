@@ -1,24 +1,22 @@
 {
   "name": "frontend",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "rsbuild dev --open",
-    "build": "rsbuild build",
-    "lint": "biome check src/",
-    "preview": "rsbuild preview"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18"
+    "@astrojs/check": "^0.9.2",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.13.1",
+    "tailwindcss": "^3.4.8",
+    "typescript": "^5.5.4"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1",
-    "@rsbuild/core": "^0.7",
-    "@rsbuild/plugin-react": "^0.7",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "typescript": "^5"
+    "daisyui": "^4.12.10"
   }
 }
